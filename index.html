@@ -51,7 +51,7 @@
 
         <main>
             <article>
-                <img src="https://picsum.photos/1200/600?random=1" alt="Placeholder Image" width="1200" height="600" loading="lazy">
+                <img id="img1" onclick="changePic1()" src="https://picsum.photos/1200/600?random=1" alt="Placeholder Image" width="1200" height="600" loading="lazy">
                 <h2>Featured Article Title</h2>
                 <div class="article-meta">Published on October 22, 2026</div>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -82,7 +82,11 @@
 
 <!--    Add javascript code here-->
     <script> 
-    
+     function changePic1() {
+        var pic1 = document.getElementById("img1");
+        pic1.src = "https://wieck-nissanao-production.s3.us-west-1.amazonaws.com/releaseInlineImages/a5c21ac282c8cec160193ee5f450fe8a911959cb";
+    } 
+        
 
     </script>
 </body>
